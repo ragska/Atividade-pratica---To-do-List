@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px; /* define a largura máxima do conteúdo */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 2rem; /* adiciona um espaçamento interno */
+  text-align: center; /* centraliza o texto dentro do elemento */
+}
+
+.input-tarefa {
+  padding: 10px; /* adiciona espaçamento interno ao input */
+  font-size: 16px; /* define o tamanho da fonte */
+  border-radius: 5px; /* arredonda as bordas */
+  border: 1px solid #ccc; /* define uma borda cinza clara */
+  outline: none; /* remove a borda padrão ao focar */
+  width: 100%; /* ocupa toda a largura disponível */
+  max-width: 300px; /* limita a largura máxima */
+  transition: border-color 0.3s ease-in-out; /* suaviza a mudança de cor da borda */
+}
+
+.input-tarefa:focus {
+  border-color: #007bff; /* altera a cor da borda para azul quando o input está em foco */
+}
+
+.lista-tarefas {
+  list-style: none; /* remove os marcadores da lista */
+  padding: 0; /* remove o espaçamento interno */
+  max-width: 700px; /* limita a largura máxima da lista */
+  padding: 20px; /* adiciona espaçamento interno */
+  border-radius: 8px; /* arredonda as bordas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* adiciona sombra */
+}
+
+.lista-tarefas li {
+  display: flex; /* usa flexbox para organizar os elementos */
+  justify-content: space-between; /* alinha os itens para as extremidades */
+  align-items: center; /* centraliza os itens verticalmente */
+  flex-wrap: wrap; /* permite que os itens quebrem linha se necessário */
+  padding: 8px; /* adiciona espaçamento interno */
+  border-bottom: 1px solid #ddd; /* adiciona uma linha separadora entre os itens */
+}
+
+.lista-tarefas input {
+  margin-right: 10px; /* adiciona um espaço entre o checkbox e o texto */
+}
+
+.tarefa-texto {
+  flex: 1; /* faz com que o texto ocupe todo o espaço disponível */
+  word-break: break-word; /* quebra palavras longas para evitar estouro do layout */
+  white-space: normal; /* permite que o texto quebre linha */
+  overflow-wrap: break-word; /* garante que palavras muito longas sejam quebradas corretamente */
+}
+
+.lista-tarefas li button {
+  background-color: #ff4d4d; /* define a cor de fundo vermelha */
+  color: white; /* define a cor do texto como branco */
+  border: none; /* remove a borda do botão */
+  padding: 5px 10px; /* adiciona espaçamento interno ao botão */
+  border-radius: 5px; /* arredonda as bordas do botão */
+  cursor: pointer; /* muda o cursor para indicar que o botão é clicável */
+}
+
+.lista-tarefas li button:hover {
+  background-color: #cc0000; /* escurece a cor de fundo ao passar o mouse */
+}
+
+.lista-tarefas .feito {
+  text-decoration: line-through; /* adiciona um risco sobre o texto da tarefa concluída */
+  color: rgb(223, 223, 223); /* muda a cor do texto para um tom de cinza claro */
+}
