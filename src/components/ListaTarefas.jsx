@@ -28,7 +28,9 @@ function ListaTarefas() {
     };
 
     useEffect(() => {
-        localStorage.setItem('tarefas', JSON.stringify(tarefas));
+        if (tarefas.length > 0) {
+            localStorage.setItem('tarefas', JSON.stringify(tarefas));
+        }
     }, [tarefas]);
 
     const removerTarefa = (id) => {
@@ -43,7 +45,9 @@ function ListaTarefas() {
     };
 
     useEffect(() => {
-        localStorage.setItem('tarefasFeitas', JSON.stringify(tarefasFeitas));
+        if (tarefasFeitas.length > 0) {
+            localStorage.setItem('tarefasFeitas', JSON.stringify(tarefasFeitas));
+        }
     }, [tarefasFeitas]);
 
     const ordenarTarefas = () => {
