@@ -19,7 +19,6 @@ function ListaTarefas() {
         }
     }, []);
     
-
     const adicionarTarefa = () => {
         if (novaTarefa.trim() !== '') {
             setTarefas([...tarefas, { id: Date.now(), texto: novaTarefa }]);
