@@ -57,6 +57,22 @@ function ListaTarefas() {
         return tarefasOrdenadas;
     };
 
+    const limparTarefasFeitas = () => {
+        const restantes = tarefas.filter((tarefa) => !tarefasFeitas.includes(tarefa.id));
+        setTarefas(restantes);
+        setTarefasFeitas([]);
+        localStorage.setItem('tarefas', JSON.stringify(restantes));
+        localStorage.removeItem('tarefasFeitas');
+    };
+    
+    const limparTodasTarefas = () => {
+        setTarefas([]);
+        setTarefasFeitas([]);
+        localStorage.removeItem('tarefas');
+        localStorage.removeItem('tarefasFeitas');
+    };
+      
+
     return (
         <div>
             <h2>Lista de Tarefas</h2>
@@ -85,6 +101,12 @@ function ListaTarefas() {
                 <button onClick={() => setOrdenacao("alfabetica")}>Ordem Alfabética</button>
                 <button onClick={() => setOrdenacao("data")}>Ordem por data</button>
             </div>
+
+            <div>
+                <button onClick={limparTarefasFeitas} className='botao'>Limpar Feitas</button>
+                <button onClick={limparTodasTarefas} className='botao'>Limpar Tudo</button>
+            </div>
+
         </div>
     );
 }

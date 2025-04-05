@@ -66,3 +66,17 @@
   text-decoration: line-through; /* adiciona um risco sobre o texto da tarefa concluída */
   color: rgb(223, 223, 223); /* muda a cor do texto para um tom de cinza claro */
 }
+
+.botao {
+  background-color: #ff4d4d; /* define a cor de fundo vermelha */
+  color: white; /* define a cor do texto como branco */
+  border: none; /* remove a borda do botão */
+  padding: 5px 10px; /* adiciona espaçamento interno ao botão */
+  border-radius: 5px; /* arredonda as bordas do botão */
+  cursor: pointer; /* muda o cursor para indicar que o botão é clicável */
+  margin: 20px;
+}
+
+.botao:hover {
+  background-color: #cc0000; /* escurece a cor de fundo ao passar o mouse */
+}
