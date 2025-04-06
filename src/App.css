@@ -14,7 +14,7 @@
   width: 100%; /* ocupa toda a largura disponível */
   max-width: 300px; /* limita a largura máxima */
   transition: border-color 0.3s ease-in-out; /* suaviza a mudança de cor da borda */
-  background-color: #161616;
+  background-color: #161616; /* muda a cor de fundo do input */
 }
 
 .input-tarefa:focus {
@@ -76,7 +76,7 @@
   padding: 5px 10px; /* adiciona espaçamento interno ao botão */
   border-radius: 5px; /* arredonda as bordas do botão */
   cursor: pointer; /* muda o cursor para indicar que o botão é clicável */
-  margin: 20px;
+  margin: 20px; /* adiciona margem ao botão */
 }
 
 .botao:hover {
