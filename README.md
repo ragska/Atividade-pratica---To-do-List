@@ -29,3 +29,11 @@ No terminal do Git Bash, digite:
 Para baixar as dependências, digite:
 
     npm install
+
+# Vídeo Explicativo e Apresentação do Projeto
+
+Interface, teste e funcionalidades: 
+
+    https://youtu.be/xsVnrKbHcCQ
+
+Código,funcionalidades e lógica:
