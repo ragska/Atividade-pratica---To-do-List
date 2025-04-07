@@ -34,8 +34,8 @@ Para baixar as dependências, digite:
 
 Interface, teste e funcionalidades: 
 
-    https://youtu.be/xsVnrKbHcCQ
+https://youtu.be/xsVnrKbHcCQ
 
 Código,funcionalidades e lógica:
 
-    https://youtu.be/Xjq10heHnWM
+https://youtu.be/Xjq10heHnWM
