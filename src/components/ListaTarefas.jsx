@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'; // Importa as hooks useState e useEffect do react
 
+// Função princpal
 function ListaTarefas() {
     // Estado que armazena a lista de tarefas
     const [tarefas, setTarefas] = useState([]);
@@ -45,7 +46,7 @@ function ListaTarefas() {
         }
     }, [tarefas]);
 
-    // Remove uma tarefa da lista (e também das feitas, se necessário)
+    // Remove uma tarefa da lista (e também das feitas)
     const removerTarefa = (id) => {
         setTarefas(tarefas.filter((tarefa) => tarefa.id !== id));
         setTarefasFeitas(tarefasFeitas.filter((tarefaId) => tarefaId !== id));
@@ -155,4 +156,5 @@ function ListaTarefas() {
     
 }
 
+//exporta o componente principal
 export default ListaTarefas;
